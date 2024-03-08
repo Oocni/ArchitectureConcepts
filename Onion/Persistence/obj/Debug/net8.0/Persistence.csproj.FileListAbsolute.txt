@@ -1,0 +1,15 @@
+E:\Perso\ArchitectureConcepts\Onion\Persistence\bin\Debug\net8.0\Persistence.deps.json
+E:\Perso\ArchitectureConcepts\Onion\Persistence\bin\Debug\net8.0\Persistence.dll
+E:\Perso\ArchitectureConcepts\Onion\Persistence\bin\Debug\net8.0\Persistence.pdb
+E:\Perso\ArchitectureConcepts\Onion\Persistence\bin\Debug\net8.0\Domain.dll
+E:\Perso\ArchitectureConcepts\Onion\Persistence\bin\Debug\net8.0\Domain.pdb
+E:\Perso\ArchitectureConcepts\Onion\Persistence\obj\Debug\net8.0\Persistence.csproj.AssemblyReference.cache
+E:\Perso\ArchitectureConcepts\Onion\Persistence\obj\Debug\net8.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+E:\Perso\ArchitectureConcepts\Onion\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfoInputs.cache
+E:\Perso\ArchitectureConcepts\Onion\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfo.cs
+E:\Perso\ArchitectureConcepts\Onion\Persistence\obj\Debug\net8.0\Persistence.csproj.CoreCompileInputs.cache
+E:\Perso\ArchitectureConcepts\Onion\Persistence\obj\Debug\net8.0\Persiste.61C28332.Up2Date
+E:\Perso\ArchitectureConcepts\Onion\Persistence\obj\Debug\net8.0\Persistence.dll
+E:\Perso\ArchitectureConcepts\Onion\Persistence\obj\Debug\net8.0\refint\Persistence.dll
+E:\Perso\ArchitectureConcepts\Onion\Persistence\obj\Debug\net8.0\Persistence.pdb
+E:\Perso\ArchitectureConcepts\Onion\Persistence\obj\Debug\net8.0\ref\Persistence.dll

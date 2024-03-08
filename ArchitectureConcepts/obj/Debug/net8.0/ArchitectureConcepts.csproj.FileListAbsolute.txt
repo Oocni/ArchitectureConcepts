@@ -1,0 +1,14 @@
+E:\Perso\ArchitectureConcepts\ArchitectureConcepts\bin\Debug\net8.0\ArchitectureConcepts.exe
+E:\Perso\ArchitectureConcepts\ArchitectureConcepts\bin\Debug\net8.0\ArchitectureConcepts.deps.json
+E:\Perso\ArchitectureConcepts\ArchitectureConcepts\bin\Debug\net8.0\ArchitectureConcepts.runtimeconfig.json
+E:\Perso\ArchitectureConcepts\ArchitectureConcepts\bin\Debug\net8.0\ArchitectureConcepts.dll
+E:\Perso\ArchitectureConcepts\ArchitectureConcepts\bin\Debug\net8.0\ArchitectureConcepts.pdb
+E:\Perso\ArchitectureConcepts\ArchitectureConcepts\obj\Debug\net8.0\ArchitectureConcepts.GeneratedMSBuildEditorConfig.editorconfig
+E:\Perso\ArchitectureConcepts\ArchitectureConcepts\obj\Debug\net8.0\ArchitectureConcepts.AssemblyInfoInputs.cache
+E:\Perso\ArchitectureConcepts\ArchitectureConcepts\obj\Debug\net8.0\ArchitectureConcepts.AssemblyInfo.cs
+E:\Perso\ArchitectureConcepts\ArchitectureConcepts\obj\Debug\net8.0\ArchitectureConcepts.csproj.CoreCompileInputs.cache
+E:\Perso\ArchitectureConcepts\ArchitectureConcepts\obj\Debug\net8.0\ArchitectureConcepts.dll
+E:\Perso\ArchitectureConcepts\ArchitectureConcepts\obj\Debug\net8.0\refint\ArchitectureConcepts.dll
+E:\Perso\ArchitectureConcepts\ArchitectureConcepts\obj\Debug\net8.0\ArchitectureConcepts.pdb
+E:\Perso\ArchitectureConcepts\ArchitectureConcepts\obj\Debug\net8.0\ArchitectureConcepts.genruntimeconfig.cache
+E:\Perso\ArchitectureConcepts\ArchitectureConcepts\obj\Debug\net8.0\ref\ArchitectureConcepts.dll

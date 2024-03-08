@@ -1,0 +1,12 @@
+E:\Perso\ArchitectureConcepts\Onion\Domains\Domain\bin\Debug\net8.0\Domain.deps.json
+E:\Perso\ArchitectureConcepts\Onion\Domains\Domain\bin\Debug\net8.0\Domain.dll
+E:\Perso\ArchitectureConcepts\Onion\Domains\Domain\bin\Debug\net8.0\Domain.pdb
+E:\Perso\ArchitectureConcepts\Onion\Domains\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Perso\ArchitectureConcepts\Onion\Domains\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+E:\Perso\ArchitectureConcepts\Onion\Domains\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+E:\Perso\ArchitectureConcepts\Onion\Domains\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+E:\Perso\ArchitectureConcepts\Onion\Domains\Domain\obj\Debug\net8.0\Domain.dll
+E:\Perso\ArchitectureConcepts\Onion\Domains\Domain\obj\Debug\net8.0\refint\Domain.dll
+E:\Perso\ArchitectureConcepts\Onion\Domains\Domain\obj\Debug\net8.0\Domain.pdb
+E:\Perso\ArchitectureConcepts\Onion\Domains\Domain\obj\Debug\net8.0\ref\Domain.dll
+E:\Perso\ArchitectureConcepts\Onion\Domains\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
