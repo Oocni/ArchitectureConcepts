@@ -1,4 +1,4 @@
-namespace Domains.Observations;
+namespace Domain.Observations;
 
 public interface IObservationsRepository
 {

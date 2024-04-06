@@ -1,4 +1,4 @@
-using Domains.Common;
+using Domain.Common;
 using DotNext;
 using Persistence.Database;
 

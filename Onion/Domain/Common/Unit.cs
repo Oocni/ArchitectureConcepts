@@ -1,4 +1,4 @@
-namespace Domains.Common;
+namespace Domain.Common;
 
 public sealed class Unit
 {

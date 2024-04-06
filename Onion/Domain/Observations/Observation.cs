@@ -1,4 +1,4 @@
-﻿namespace Domains.Observations;
+﻿namespace Domain.Observations;
 
 /// <summary>
 /// Observation entity

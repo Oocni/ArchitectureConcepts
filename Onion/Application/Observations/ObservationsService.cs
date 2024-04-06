@@ -1,5 +1,5 @@
-﻿using Domains.Common;
-using Domains.Observations;
+﻿using Domain.Common;
+using Domain.Observations;
 using DotNext;
 
 namespace Application.Observations;

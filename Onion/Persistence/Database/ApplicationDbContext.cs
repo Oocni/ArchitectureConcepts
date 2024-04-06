@@ -1,4 +1,4 @@
-﻿using Domains.Observations;
+﻿using Domain.Observations;
 using Microsoft.EntityFrameworkCore;
 
 namespace Persistence.Database;

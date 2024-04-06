@@ -1,7 +1,7 @@
 using API.EndPoints;
 using Application.Observations;
-using Domains.Common;
-using Domains.Observations;
+using Domain.Common;
+using Domain.Observations;
 using Microsoft.EntityFrameworkCore;
 using Persistence.Database;
 using Persistence.Repositories;

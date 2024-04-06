@@ -1,6 +1,6 @@
 using DotNext;
 
-namespace Domains.Common;
+namespace Domain.Common;
 
 public interface IUnitOfWork
 {
