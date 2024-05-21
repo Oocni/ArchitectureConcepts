@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ObservationsService>();
 
-builder.Services.AddScoped<IObservationsRepository, ObservationsRepository>();
+builder.Services.AddScoped<IObservationsRepository, ObservationRepository>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {

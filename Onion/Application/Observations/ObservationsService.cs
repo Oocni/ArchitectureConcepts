@@ -13,9 +13,10 @@ public class ObservationsService(
         return await repository.GetAsync(id, cancellationToken);
     }
 
-    public Task<IEnumerable<Observation>> GetAllAsync(int? id, int limit, CancellationToken cancellationToken = default)
+    public async Task<IEnumerable<ObservationResponse>> GetAllAsync(int? id, int limit, CancellationToken cancellationToken = default)
     {
-        return repository.GetAllAsync(id, limit, cancellationToken);
+        var observations = await repository.GetAllAsync(id, limit, cancellationToken);
+        return observations.Select(o => (ObservationResponse)o!);
     }
 
     public async Task<Result<int>> AddAsync(CreateObservationParameters parameters, CancellationToken cancellationToken = default)

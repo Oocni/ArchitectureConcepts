@@ -4,11 +4,11 @@ using Persistence.Database;
 
 namespace Persistence.Repositories;
 
-public class ObservationsRepository : IObservationsRepository
+public class ObservationRepository : IObservationsRepository
 {
     private readonly ApplicationDbContext _context;
 
-    public ObservationsRepository(ApplicationDbContext context)
+    public ObservationRepository(ApplicationDbContext context)
     {
         _context = context;
     }
@@ -21,7 +21,7 @@ public class ObservationsRepository : IObservationsRepository
             .AsTask();
     }
 
-    public async Task<IEnumerable<Observation>> GetAllAsync(int? id, int limit = 10, CancellationToken cancellationToken = default)
+    public async Task<IReadOnlyCollection<Observation>> GetAllAsync(int? id, int limit = 10, CancellationToken cancellationToken = default)
     {
         var query = _context
             .Observations

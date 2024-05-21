@@ -1,4 +1,4 @@
-namespace Domain.Observations;
+namespace ArchitectureConcepts.Clean.Core.Domain.Observations;
 
 public interface IObservationsRepository
 {
@@ -9,15 +9,6 @@ public interface IObservationsRepository
     /// <param name="cancellationToken"></param>
     /// <returns>Returns the observation or null if not find</returns>
     Task<Observation?> GetAsync(int id, CancellationToken cancellationToken = default);
-    
-    /// <summary>
-    /// Get all observations
-    /// </summary>
-    /// <param name="id">Id to begin the search from</param>
-    /// <param name="limit">Nb of observations to return</param>
-    /// <param name="cancellationToken"></param>
-    /// <returns>Returns the observations</returns>
-    Task<IEnumerable<Observation>> GetAllAsync(int? id, int limit, CancellationToken cancellationToken = default);
     
     /// <summary>
     /// Add an observation
