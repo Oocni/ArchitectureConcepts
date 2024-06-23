@@ -1,5 +1,6 @@
-using ArchitectureConcepts.Clean.Core.Domain.Common;
 using ArchitectureConcepts.Clean.Core.Domain.Observations;
+using ArchitectureConcepts.Common.Core.Domain.Common;
+using ArchitectureConcepts.Common.Core.Domain.Observations;
 using DotNext;
 using MediatR;
 using Unit = MediatR.Unit;

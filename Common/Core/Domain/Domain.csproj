@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>ArchitectureConcepts.Common.Core.Domain</AssemblyName>
+        <RootNamespace>ArchitectureConcepts.Common.Core.Domain</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="DotNext" Version="5.1.0" />
+    </ItemGroup>
+
+</Project>

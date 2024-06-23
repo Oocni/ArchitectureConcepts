@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>ArchitectureConcepts.Clean.Core.Domain</AssemblyName>
+        <RootNamespace>ArchitectureConcepts.Clean.Core.Domain</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\Common\Core\Domain\Domain.csproj" />
+    </ItemGroup>
+
+</Project>

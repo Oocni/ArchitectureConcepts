@@ -1,14 +1,15 @@
-using Domain.Observations;
+using ArchitectureConcepts.Common.Core.Domain.Observations;
+using ArchitectureConcepts.Common.External.Persistance.Database;
+using ArchitectureConcepts.Onion.Core.Domain.Observations;
 using Microsoft.EntityFrameworkCore;
-using Persistence.Database;
 
-namespace Persistence.Repositories;
+namespace ArchitectureConcepts.Onion.External.Persistence.Repositories;
 
-public class ObservationRepository : IObservationsRepository
+public class ObservationsRepository : IObservationsRepository
 {
     private readonly ApplicationDbContext _context;
 
-    public ObservationRepository(ApplicationDbContext context)
+    public ObservationsRepository(ApplicationDbContext context)
     {
         _context = context;
     }

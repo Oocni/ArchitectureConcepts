@@ -1,4 +1,5 @@
 using ArchitectureConcepts.Clean.Core.Domain.Observations;
+using ArchitectureConcepts.Common.Core.Domain.Observations;
 using MediatR;
 
 namespace ArchitectureConcepts.Clean.Core.Application.Observations.Get;

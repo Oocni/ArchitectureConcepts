@@ -1,8 +1,8 @@
-using ArchitectureConcepts.Clean.Core.Domain.Common;
-using ArchitectureConcepts.Clean.Core.Persistence.Database;
+using ArchitectureConcepts.Common.Core.Domain.Common;
+using ArchitectureConcepts.Common.External.Persistance.Database;
 using DotNext;
 
-namespace ArchitectureConcepts.Clean.Core.Persistence.UnitOfWork;
+namespace ArchitectureConcepts.Common.External.Persistance.UnitOfWork;
 
 public class UnitOfWork : IUnitOfWork
 {

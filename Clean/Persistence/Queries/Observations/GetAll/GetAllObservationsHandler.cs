@@ -1,10 +1,10 @@
 using ArchitectureConcepts.Clean.Core.Application.Observations;
 using ArchitectureConcepts.Clean.Core.Application.Observations.GetAll;
-using ArchitectureConcepts.Clean.Core.Persistence.Database;
+using ArchitectureConcepts.Common.External.Persistance.Database;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace ArchitectureConcepts.Clean.Core.Persistence.Queries.Observations.GetAll;
+namespace ArchitectureConcepts.Clean.External.Persistence.Queries.Observations.GetAll;
 
 public class GetAllObservationsHandler(ApplicationDbContext context)
     : IRequestHandler<GetAllObservationsQuery, IEnumerable<ObservationResponse>>

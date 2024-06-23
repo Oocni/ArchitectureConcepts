@@ -1,7 +1,7 @@
-﻿using ArchitectureConcepts.Clean.Core.Domain.Observations;
+﻿using ArchitectureConcepts.Common.Core.Domain.Observations;
 using Microsoft.EntityFrameworkCore;
 
-namespace ArchitectureConcepts.Clean.Core.Persistence.Database;
+namespace ArchitectureConcepts.Common.External.Persistance.Database;
 
 public class ApplicationDbContext : DbContext
 {

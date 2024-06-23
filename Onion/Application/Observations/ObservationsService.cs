@@ -1,8 +1,9 @@
-﻿using Domain.Common;
-using Domain.Observations;
+﻿using ArchitectureConcepts.Common.Core.Domain.Common;
+using ArchitectureConcepts.Common.Core.Domain.Observations;
+using ArchitectureConcepts.Onion.Core.Domain.Observations;
 using DotNext;
 
-namespace Application.Observations;
+namespace ArchitectureConcepts.Onion.Core.Application.Observations;
 
 public class ObservationsService(
     IObservationsRepository repository,

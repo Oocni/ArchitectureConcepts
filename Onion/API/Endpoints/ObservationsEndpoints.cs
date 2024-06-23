@@ -1,6 +1,7 @@
-using Application.Observations;
+using ArchitectureConcepts.Common.External.API.Endpoints;
+using ArchitectureConcepts.Onion.Core.Application.Observations;
 
-namespace API.EndPoints;
+namespace ArchitectureConcepts.Onion.External.API.Endpoints;
 
 public static class ObservationsEndpoints
 {

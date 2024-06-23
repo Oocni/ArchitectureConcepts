@@ -1,4 +1,4 @@
-using ArchitectureConcepts.Clean.Core.Domain.Observations;
+using ArchitectureConcepts.Common.Core.Domain.Observations;
 
 namespace ArchitectureConcepts.Clean.Core.Application.Observations;
 

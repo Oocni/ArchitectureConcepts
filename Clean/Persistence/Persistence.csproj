@@ -4,8 +4,8 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <AssemblyName>ArchitectureConcepts.Clean.Core.Persistence</AssemblyName>
-        <RootNamespace>ArchitectureConcepts.Clean.Core.Persistence</RootNamespace>
+        <AssemblyName>ArchitectureConcepts.Clean.External.Persistence</AssemblyName>
+        <RootNamespace>ArchitectureConcepts.Clean.External.Persistence</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -14,7 +14,9 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\Common\External\Persistence\Persistence.csproj" />
       <ProjectReference Include="..\Application\Application.csproj" />
+      <ProjectReference Include="..\Core\Domain\Domain.csproj" />
     </ItemGroup>
 
 </Project>

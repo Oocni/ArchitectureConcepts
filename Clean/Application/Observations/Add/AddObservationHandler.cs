@@ -1,5 +1,7 @@
-using ArchitectureConcepts.Clean.Core.Domain.Common;
 using ArchitectureConcepts.Clean.Core.Domain.Observations;
+using ArchitectureConcepts.Common.Core.Domain.Common;
+using ArchitectureConcepts.Common.Core.Domain.Observations;
+using DotNext;
 using MediatR;
 
 namespace ArchitectureConcepts.Clean.Core.Application.Observations.Add;
@@ -7,9 +9,9 @@ namespace ArchitectureConcepts.Clean.Core.Application.Observations.Add;
 public class AddObservationHandler(
     IObservationsRepository observationRepository,
     IUnitOfWork unitOfWork)
-    : IRequestHandler<AddObservationCommand, int>
+    : IRequestHandler<AddObservationCommand, Result<int>>
 {
-    public async Task<int> Handle(AddObservationCommand request, CancellationToken cancellationToken)
+    public async Task<Result<int>> Handle(AddObservationCommand request, CancellationToken cancellationToken)
     {
         var observation = (Observation)request;
         var observationId = observationRepository.Add(observation);

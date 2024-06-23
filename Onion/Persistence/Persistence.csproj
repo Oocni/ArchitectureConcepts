@@ -4,6 +4,8 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <AssemblyName>ArchitectureConcepts.Onion.External.Persistence</AssemblyName>
+        <RootNamespace>ArchitectureConcepts.Onion.External.Persistence</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -11,7 +13,13 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Domain\Domain.csproj" />
+      <ProjectReference Include="..\..\Common\Core\Domain\Domain.csproj" />
+      <ProjectReference Include="..\..\Common\External\Persistence\Persistence.csproj" />
+      <ProjectReference Include="..\Core\Domain\Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Common\Core\Domain\Domain.csproj" />
     </ItemGroup>
 
 </Project>

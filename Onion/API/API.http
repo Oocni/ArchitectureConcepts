@@ -1,6 +1,39 @@
-@API_HostAddress = http://localhost:5103
+@host = http://localhost:5103
 
-GET {{API_HostAddress}}/weatherforecast/
+###
+
+GET {{host}}/api/observations/1
 Accept: application/json
 
 ###
+
+GET {{host}}/api/observations
+Accept: application/json
+
+###
+
+POST {{host}}/api/observations
+Content-Type: application/json
+Accept: application/json
+
+{
+  "Name": "Nom de l'observation",
+  "CreatedBy": "Créateur de l'observation",
+  "Description": "Description de l'observation"
+}
+
+###
+
+PUT {{host}}/api/observations/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "Name": "Nouveau nom de l'observation",
+  "Description": "Nouvelle description de l'observation"
+}
+
+###
+
+DELETE {{host}}/api/observations/1
+Accept: application/json

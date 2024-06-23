@@ -1,7 +1,8 @@
 using ArchitectureConcepts.Clean.Core.Domain.Observations;
-using ArchitectureConcepts.Clean.Core.Persistence.Database;
+using ArchitectureConcepts.Common.Core.Domain.Observations;
+using ArchitectureConcepts.Common.External.Persistance.Database;
 
-namespace ArchitectureConcepts.Clean.Core.Persistence.Repositories;
+namespace ArchitectureConcepts.Clean.External.Persistence.Repositories;
 
 public class ObservationsRepository(ApplicationDbContext context) : IObservationsRepository
 {

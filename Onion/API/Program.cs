@@ -1,11 +1,11 @@
-using API.EndPoints;
-using Application.Observations;
-using Domain.Common;
-using Domain.Observations;
+using ArchitectureConcepts.Common.Core.Domain.Common;
+using ArchitectureConcepts.Common.External.Persistance.Database;
+using ArchitectureConcepts.Common.External.Persistance.UnitOfWork;
+using ArchitectureConcepts.Onion.Core.Application.Observations;
+using ArchitectureConcepts.Onion.Core.Domain.Observations;
+using ArchitectureConcepts.Onion.External.API.Endpoints;
+using ArchitectureConcepts.Onion.External.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
-using Persistence.Database;
-using Persistence.Repositories;
-using Persistence.UnitOfWork;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ObservationsService>();
 
-builder.Services.AddScoped<IObservationsRepository, ObservationRepository>();
+builder.Services.AddScoped<IObservationsRepository, ObservationsRepository>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {

@@ -1,6 +1,6 @@
-using Domain.Observations;
+using ArchitectureConcepts.Common.Core.Domain.Observations;
 
-namespace Application.Observations;
+namespace ArchitectureConcepts.Onion.Core.Application.Observations;
 
 public record CreateObservationParameters(string Name, string CreatedBy, string? Description = null)
 {
