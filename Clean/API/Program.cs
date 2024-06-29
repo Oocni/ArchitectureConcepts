@@ -1,6 +1,7 @@
 using ArchitectureConcepts.Clean.Core.Application.Observations.Add;
-using ArchitectureConcepts.Clean.Core.Application.Observations.GetAll;
 using ArchitectureConcepts.Clean.Core.Domain.Observations;
+using ArchitectureConcepts.Clean.External.API.Endpoints;
+using ArchitectureConcepts.Clean.External.Persistence.Queries.Observations.GetAll;
 using ArchitectureConcepts.Clean.External.Persistence.Repositories;
 using ArchitectureConcepts.Common.Core.Domain.Common;
 using ArchitectureConcepts.Common.External.Persistance.Database;
@@ -17,7 +18,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IObservationsRepository, ObservationsRepository>();
 builder.Services.AddMediatR(conf
     => conf.RegisterServicesFromAssemblies(typeof(AddObservationCommand).Assembly,
-        typeof(GetAllObservationsQuery).Assembly));
+        typeof(GetAllObservationsHandler).Assembly));
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
@@ -34,6 +35,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.MapObservationsEndpoints();
 app.UseHttpsRedirection();
 
 app.Run();

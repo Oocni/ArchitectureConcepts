@@ -33,18 +33,18 @@ while (@continue)
 
     switch (userInput)
     {
-        case "c" : CreateObservationAsync(); break;
-        case "u" : UpdateObservationAsync(); break;
-        case "d" : DeleteObservationAsync(); break;
-        case "g" : GetObservationAsync(); break;
-        case "l" : ListObservationsAsync(); break;
+        case "c" : await CreateObservationAsync(); break;
+        case "u" : await UpdateObservationAsync(); break;
+        case "d" : await DeleteObservationAsync(); break;
+        case "g" : await GetObservationAsync(); break;
+        case "l" : await ListObservationsAsync(); break;
         case "e" : @continue = false; break;
         default : Console.WriteLine("Invalid input"); break;
     }
 }
 return;
 
-async void CreateObservationAsync()
+async Task CreateObservationAsync()
 {
     Console.WriteLine("- Observation name:");
     var observationName = Console.ReadLine();
@@ -74,7 +74,7 @@ async void CreateObservationAsync()
     }
 }
 
-async void UpdateObservationAsync()
+async Task UpdateObservationAsync()
 {
     Console.WriteLine("- Observation Id:");
     var observationId = Console.ReadLine();
@@ -103,14 +103,17 @@ async void UpdateObservationAsync()
     }
 }
 
-async void DeleteObservationAsync()
+async Task DeleteObservationAsync()
 {
     Console.WriteLine("- Observation Id:");
     var observationId = Console.ReadLine();
     
+    Console.WriteLine("- Deleted by:");
+    var deletedBy = Console.ReadLine();
+    
     var httpClient = new HttpClient();
     httpClient.BaseAddress = GetArchitectureBaseAddress(architecture);
-    var request = new HttpRequestMessage(HttpMethod.Delete, $"api/observations/{observationId}");
+    var request = new HttpRequestMessage(HttpMethod.Delete, $"api/observations/{observationId}?deletedBy={deletedBy}");
     var response = await httpClient.SendAsync(request);
     if (response.IsSuccessStatusCode)
     {
@@ -122,7 +125,7 @@ async void DeleteObservationAsync()
     }
 }
 
-async void GetObservationAsync()
+async Task GetObservationAsync()
 {
     Console.WriteLine("- Observation Id:");
     var observationId = Console.ReadLine();
@@ -142,7 +145,7 @@ async void GetObservationAsync()
     }
 }
 
-async void ListObservationsAsync()
+async Task ListObservationsAsync()
 {
     var httpClient = new HttpClient();
     httpClient.BaseAddress = GetArchitectureBaseAddress(architecture);
@@ -163,8 +166,8 @@ Uri GetArchitectureBaseAddress(string architecture)
 {
     return architecture switch
     {
-        "o" => new Uri("https://localhost:5001"),
-        "c" => new Uri("https://localhost:5002"),
+        "o" => new Uri("http://localhost:5001"),
+        "c" => new Uri("http://localhost:5002"),
         _ => throw new NotImplementedException()
     };
 }
